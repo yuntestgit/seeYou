@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+}
+
+body {
+	overflow-y: scroll;	
+	overflow-x: auto;	
+}
+
+.hide {
+	display: none;
+}
+
+.wrapper {
+	width: 100%;
+	/* max-width: 1600px; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* #region [blue] header */
+.header {
+	position: relative;
+	font-size: 0;
+}
+
+.header > div {
+	display: inline-block;
+}
+
+.header > .logoContainer {
+	vertical-align: top;
+	width: 300px;
+}
+
+.header > .logoContainer > img {
+	cursor: pointer;
+	margin: 15px;
+}
+
+.header > .text {
+	vertical-align: bottom;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.header > .operatingArea {
+	position: absolute;
+	bottom: 18px;
+	right: 15px;
+}
+
+.header > .underLine {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 30px);
+	height: 3px;
+}
+
+.header > .operatingArea .iconButton {
+	margin-right: 20px;
+}
+/* #endregion [blue] */
+
+/* #region [purple] */
+.bodyContainer {
+	font-size: 0;
+}
+
+.bodyContainer > div {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1rem;
+}
+
+.bodyContainer > .sidebar {
+	box-sizing: border-box;
+	width: 300px;
+	padding: 20px;
+}
+
+.bodyContainer > .sidebar > .sideMenu {
+	margin-bottom: 25px;
+}
+
+.bodyContainer > .sidebar > .sideMenu:last-child {
+	margin-bottom: 0px;
+}
+
+.bodyContainer > .main {
+	width: calc(100% - 300px);
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.trapezoidNavbar {
+	margin: 20px;	
+}
+
+.trapezoidNavbar {
+	width: calc(6.85rem * 5);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.roomPatientContainer {
+	width: calc(5.4rem * 4);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bedContainer,
+.sleepingTapeContainer,
+.bloodContainer,
+.infoContainer,
+.insideDeviceContainer,
+.floorOperatingContainer {
+	width: 33rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sideInfo {
+	width: 200px;
+}
+
+.insertBar {
+	text-align: right;
+}
+
+.insertBar > button {
+	font-size: 0.7rem;	
+}
+/* #endregion [purple] */

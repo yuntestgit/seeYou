@@ -1,0 +1,49 @@
+:root {
+	--main-color1: #ec8200;
+	--main-color2: #fff;
+	--main-color3: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+	font-family: 微軟正黑體;
+}
+
+html {
+	font-size: 25px;
+}
+
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+button {
+	display: inline-block;
+	outline: none;
+	border: none;
+	border-radius: 1em;
+	padding: 0.4em 0.8em;
+	color: var(--main-color2);
+	background-color: var(--main-color1);
+}
+
+button:hover {
+	color: var(--main-color3);
+}
+
+button.negative {
+	background-color: #999;
+	color: #fff;
+}
+
+button.negative:hover {
+	color: var(--main-color3);
+}

@@ -1,0 +1,83 @@
+.sortTable {
+	border-spacing: 0px;
+	width: 100%;
+	min-width: 800px;
+	text-align: left;
+}
+
+.sortTable th {
+	cursor: default;
+	font-size: 0.85rem;
+	height: 1.6rem;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.sortTable th .sortIcon {
+	display: inline-block;
+}
+
+.sortTable th .sortIcon > img {
+	user-select: none;
+	width: 12px;
+	height: 20px;
+}
+
+/* #region normal */
+.sortTable th .sortIcon > img[alt="none"] {
+	display: block;
+}
+.sortTable th .sortIcon > img[alt="asc"],
+.sortTable th .sortIcon > img[alt="desc"] {
+	display: none;
+}
+/* #endregion */
+
+/* #region asc */
+.sortTable th.asc .sortIcon > img[alt="asc"] {
+	display: block;
+}
+
+.sortTable th.asc .sortIcon > img[alt="none"],
+.sortTable th.asc .sortIcon > img[alt="desc"] {
+	display: none;
+}
+/* #endregion */
+
+/* #region desc */
+.sortTable th.desc .sortIcon > img[alt="desc"] {
+	display: block;
+}
+
+.sortTable th.desc .sortIcon > img[alt="none"],
+.sortTable th.desc .sortIcon > img[alt="asc"] {
+	display: none;
+}
+/* #endregion */
+
+.sortTable tr:first-child > td {
+	border-top: 2px solid #e17f10;
+}
+
+.sortTable tr:last-child > td {
+	border-bottom: 2px solid #e17f10;
+}
+
+.sortTable td {
+	font-size: 0.65rem;
+	height: 1.4rem;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.operatingTd {
+	text-align: center;
+	width: 6rem;
+}
+
+.sortTable button {
+	font-size: 0.6rem;
+	padding: 0.1rem 0.8rem;
+	margin-left: 0.1rem;
+	margin-right: 0.1rem;
+}

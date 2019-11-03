@@ -1,0 +1,29 @@
+.iconButton {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.iconButton > img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.iconButton > .text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.8rem;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.iconButton.borderButton {
+	padding: 0 0.4rem 0 0.4rem;
+	background-color: #fff;
+	border: 1.5px solid #ec8200;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.iconButton.borderButton > .text {
+	line-height: 2;
+}

@@ -1,0 +1,26 @@
+.sleepingTapeContainer {
+	font-size: 0.8rem;	
+}
+
+.sleepingTapeContainer > div::before {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+}
+
+.sleepingTapeContainer > div > div {
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.sleepingTapeContainer .border-box {
+	min-width: 1rem;
+	min-height: 1rem;
+	
+	border: 2px solid #838383;
+}
+
+.sleepingTapeContainer > div:first-child > div:first-child {
+	min-width: 3rem;
+}

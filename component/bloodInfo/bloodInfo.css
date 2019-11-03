@@ -1,0 +1,42 @@
+.bloodContainer {
+	font-size: 0.7rem;
+}
+
+.bloodContainer > .row {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.bloodContainer > .row > .left {
+	width: 40%;
+	
+	display: flex;
+}
+
+.bloodContainer > .row > .left > div {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bloodContainer > .row > .left > div > div {
+	display: flex;
+}
+
+.bloodContainer > .row:last-child > .left {
+	display: block;
+}
+
+.bloodContainer > .row:last-child > .left > div {
+	display: block;
+}
+
+.bloodContainer > .row:last-child > .left > div > div {
+	display: inline-block;
+}
+
+.bloodContainer > .row > .right {
+	width: 60%;
+	height: 200px;
+}

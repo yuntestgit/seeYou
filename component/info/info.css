@@ -1,0 +1,82 @@
+.imgTd {
+	text-align: center;
+}
+
+.infoContainer table {
+	font-size: 0.625rem;
+}
+
+.data {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 3rem;
+}
+.data:first-child {
+	margin-left: 0;
+}
+
+.data td {
+	height: 1rem;
+}
+
+.data .th {
+	width: 3.5rem;
+}
+
+.data .value {
+	text-align: right;
+	width: 2.5rem;
+}
+
+.data .unit {
+	width: 2rem;
+	padding-left: 1rem;
+}
+
+.borderColumn {
+	border: 2px solid #838383;
+	display: inline;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.inline-block-child-div {
+	min-width: 6rem;
+}
+.inline-block-child-div > div {
+	display: inline-block;
+}
+
+.vertical-align-top {
+	vertical-align: top;
+}
+
+.thermometerContainer > .value {
+	margin-left: 1rem;
+	margin-right: 0.5rem;
+}
+
+.infoTable {
+	border-collapse: collapse;
+	/* border-spacing: 50px; */
+}
+
+.row-spacing {
+	height: 2.5rem;	
+}
+
+.imgTd {
+	width: 4rem;	
+}
+
+
+.temperatureContainer {
+	width: 500px;
+	height: 200px;
+}
+
+.temperatureContainer > div {
+	margin-top: -70px;
+}

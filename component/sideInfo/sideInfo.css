@@ -1,0 +1,35 @@
+.sideInfo > .title {
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+
+.sideInfo .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.sideInfo .row > .flex-end {
+	align-self: flex-end;
+}
+
+.sideInfo .row > .flex-end > div {
+	text-align: right;	
+}
+
+.sideInfo .operatingArea {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sideInfo .underlineTitle {
+	font-size: 0.8rem;
+	font-weight: 600;
+	border-bottom: 2px solid #e17f10;
+}
+
+.sideInfo .underlineTitle ~ ul > li {
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 0.7rem;
+}

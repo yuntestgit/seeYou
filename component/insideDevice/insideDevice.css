@@ -1,0 +1,57 @@
+.insideDeviceContainer {
+	
+}
+
+.insideDeviceContainer table {
+	font-size: 0.625rem;
+}
+
+.insideDeviceContainer > .controller,
+.insideDeviceContainer > .data {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.insideDeviceContainer > .controller td {
+	height: 3.5rem;
+}
+
+.insideDeviceContainer > .controller .deviceImage {
+	text-align: left;
+	width: 5rem;
+}
+
+.insideDeviceContainer > .controller .deviceItem {
+	width: 4rem;
+}
+
+.insideDeviceContainer > .controller .situation {
+	width: 3rem;
+}
+
+.insideDeviceContainer > .controller .situation .value,
+.insideDeviceContainer > .controller .situation .unit {
+	display: inline-block;
+}
+
+.data td {
+	height: 1.45rem;
+}
+
+.data .th {
+	width: 3.5rem;
+}
+
+.data .value {
+	text-align: right;
+	width: 2.5rem;
+}
+
+.data .unit {
+	width: 2rem;
+	padding-left: 1rem;
+}
+
+.borderColumn {
+	border: 2px solid #838383;
+}

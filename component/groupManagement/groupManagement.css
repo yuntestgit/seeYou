@@ -1,0 +1,35 @@
+.groupManagement .groupRow {
+	border-bottom: 2px solid #ec8200;
+	margin-bottom: 2rem;
+}
+
+.groupManagement .groupRow::before {
+	display: inline-block;
+	content: '';
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.groupManagement .groupRow > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.groupManagement .groupRow > .title {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 0.8rem;
+}
+
+.groupManagement .groupRow > button {
+	padding: 0.2rem 0.8rem;
+	
+	margin-left: 1rem;
+	margin-right: 0.5rem;
+}
+
+.groupManagement .groupRow > button.negative {
+	margin-left: 0;
+	margin-right: 0;
+}

@@ -1,0 +1,112 @@
+.trapezoidNavbar {
+	font-size: 0;
+	min-width: 34rem;
+}
+
+.trapezoidNavbar > .item {
+	cursor: default;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 8rem;
+	height: 3rem;
+	padding: 2px;
+	background-color: #ec8200;
+	margin-left: -1.5rem;
+}
+
+.trapezoidNavbar > .item.left {
+	clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	margin-left: 0;
+}
+
+.trapezoidNavbar > .item.right {
+	clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+.trapezoidNavbar > .item.top {
+	clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+}
+
+.trapezoidNavbar > .item.bottom {
+	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.trapezoidNavbar > .item > .content {
+	display: inline-block;
+	text-align: center;
+
+	width: 100%;
+	height: 100%;
+	font-size: 0.75rem;
+	background-color: #fff;
+}
+
+.trapezoidNavbar > .item > .content.left {
+	clip-path: polygon(0% 0%, 80% 0%, 99% 100%, 0% 100%);
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+
+.trapezoidNavbar > .item > .content.right {
+	clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 1% 100%);
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+.trapezoidNavbar > .item > .content.top {
+	clip-path: polygon(1% 0%, 99% 0%, 80% 100%, 20% 100%);
+}
+
+.trapezoidNavbar > .item > .content.bottom {
+	clip-path: polygon(20% 0%, 80% 0%, 99% 100%, 1% 100%);
+}
+
+.trapezoidNavbar > .item > .content > img {
+	margin-right: 0.25rem;
+	height: 1.5rem;
+	max-width: 2rem; /* width limit*/
+	vertical-align: middle;
+}
+
+.trapezoidNavbar > .item > .content > .image {
+	display: inline;
+}
+
+.trapezoidNavbar > .item > .content > .image-active {
+	display: none;
+}
+
+.trapezoidNavbar > .item > .content.left > img {
+	margin-left: -10%;
+}
+.trapezoidNavbar > .item > .content.right > img {
+	margin-left: 10%;
+}
+
+.trapezoidNavbar > .item > .content > .text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.75rem;
+	line-height: 4;
+	font-family: 微軟正黑體;
+	font-weight: 700;
+	color: #444;
+}
+
+.trapezoidNavbar > .item.active > .content {
+	background-color: #ec8200;
+}
+.trapezoidNavbar > .item.active > .content > .text {
+	color: #fff;
+}
+
+.trapezoidNavbar > .item.active > .content > .image-active {
+	display: inline;
+}
+.trapezoidNavbar > .item.active > .content > .image {
+	display: none;
+}

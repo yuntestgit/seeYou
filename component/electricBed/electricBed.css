@@ -1,0 +1,104 @@
+/* #region movableRange*/
+.movableRange {
+	position: relative;
+}
+
+.movableRange > .movableItem {
+	position: absolute;
+}
+/* #endregion */
+
+.bedContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.scrollItem {
+	display: flex;
+	align-items: center;
+	font-size: 0.5rem;
+}
+
+.scrollItem > .left {
+	position: relative;
+}
+
+.scrollItem > .left > .scrollbar,
+.scrollItem > .left > .scrollbar + .scrollbarRange {
+	background-color: transparent;
+	width: 200px;
+	height: 30px;
+	margin: 0;
+}
+
+.scrollItem > .left > .scrollbar + .scrollbarRange {
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.scrollItem > .left > .scrollbar > .track {
+	position: absolute;
+	background-color: #bfbfbf;
+	top: calc(50% - 0px);
+	left: 0;
+	width: 100%;
+	height: 1px;
+}
+
+.scrollItem > .left > .scrollbar > .slider {
+	top: 0%;
+	left: 0%;
+	width: 12px;
+	height: 100%;
+	
+	background-color: #ec8200;
+	border-radius: 16px;
+}
+
+.scrollItem > .right {
+	padding-left: 20px;	
+	text-align: center;
+}
+
+.scrollItem > .right > img {
+	width: 30px;
+}
+
+.scrollbarValue {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0;
+	/* color: #f00; */
+	/* display: none; */
+}
+
+
+
+.bedContainer .btn {
+	background-color: #f09833;
+	border: none;
+	outline: none;
+	font-size: 0.6rem;
+	height: 1.25rem;
+	width: 4.25rem;
+	border-radius: 15px;
+}
+
+.bed > img {
+	height: 180px;
+}
+
+.bedContainer .chartsGroup {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.bedContainer .chartsGroup .chart {
+	width: 275px;
+	height: 180px;
+}

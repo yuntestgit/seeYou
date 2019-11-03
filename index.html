@@ -1,0 +1,2649 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" class="loading">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>護聯網平台</title>
+		<link rel="icon" type="image/x-icon" href="global/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="global/global.css" />
+		<link rel="stylesheet" type="text/css" href="global/layout.css" />
+		<link rel="stylesheet" type="text/css" href="component/login/login.css" />
+		<link rel="stylesheet" type="text/css" href="component/msgbox/msgbox.css" />
+		<link rel="stylesheet" type="text/css" href="component/iconButton/iconButton.css" />
+		<link rel="stylesheet" type="text/css" href="component/sideMenu/sideMenu.css" />
+		<link rel="stylesheet" type="text/css" href="component/trapezoidNavbar/trapezoidNavbar.css" />
+		<link rel="stylesheet" type="text/css" href="component/roomPatient/roomPatient.css" />
+		<link rel="stylesheet" type="text/css" href="component/electricBed/electricBed.css" />
+		<link rel="stylesheet" type="text/css" href="component/chart/chart.css" />
+		<link rel="stylesheet" type="text/css" href="component/sleepingTape/sleepingTape.css" />
+		<link rel="stylesheet" type="text/css" href="component/bloodInfo/bloodInfo.css" />
+		<link rel="stylesheet" type="text/css" href="component/info/info.css" />
+		<link rel="stylesheet" type="text/css" href="component/trapezoidSwitch/trapezoidSwitch.css" />
+		<link rel="stylesheet" type="text/css" href="component/insideDevice/insideDevice.css" />
+		<link rel="stylesheet" type="text/css" href="component/sideInfo/sideInfo.css" />
+		<link rel="stylesheet" type="text/css" href="component/sortTable/sortTable.css" />
+		<link rel="stylesheet" type="text/css" href="component/floorManagement/floorManagement.css" />
+		<link rel="stylesheet" type="text/css" href="component/groupManagement/groupManagement.css" />
+	</head>
+	
+	<body>
+		<div id="login_page" class="bg-container">
+			<img class="noselect bg" src="component/login/pic/bg.png" />
+			<img class="noselect bg-mobile" src="component/login/pic/bg-mobile.png" />
+			<div class="login-form">
+				<div class="middle">
+					<div class="h2">使用者登入</div>
+					<div class="h3">帳號</div>
+					<div><input type="text" id="user_id" /></div>
+					<div class="h3">密碼</div>
+					<div><input type="password" id="user_password" /></div>
+					<div class="h4">忘記密碼</div>
+					<button class="btn" id="login_button">登入</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wrapper hide">
+			<div class="header">
+				<div class="logoContainer"><img src="global/logo.png" alt="logo" /></div>
+				<div class="text">康健雲平台</div>
+				<div class="operatingArea">
+					<div class="homePage">
+						<div id="settingBtn" class="iconButton">
+							<img src="component/iconButton/pic/setting.png" alt="設置" />
+							<div class="text">設置</div>
+						</div>
+						<div id="loginoutBtn" class="iconButton">
+							<img src="component/iconButton/pic/loginout.png" alt="登出" />
+							<div class="text">登出</div>
+						</div>
+					</div>
+					<div class="settingPage hide">
+						<div id="backIconBtn" class="iconButton">
+							<img src="component/iconButton/pic/backIcon.png" alt="返回" />
+							<div class="text">返回</div>
+						</div>
+					</div>
+				</div>
+				<div class="underLine"></div>
+			</div>
+			
+			<div class="bodyContainer">
+				<div class="sidebar">
+					<div class="homePage">
+						<div class="sideMenuContainer">
+							<div class="sideMenu expanded">
+								<div class="title">一樓</div>
+								<ul class="noUnderline">
+									<li>
+										<div class="sideMenu expanded">
+											<div class="title">101</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">102</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">103</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">104</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="sideMenu">
+								<div class="title">二樓</div>
+								<ul class="noUnderline">
+									<li>
+										<div class="sideMenu">
+											<div class="title">201</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">202</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">203</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">204</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="sideMenu">
+								<div class="title">三樓</div>
+								<ul class="noUnderline">
+									<li>
+										<div class="sideMenu">
+											<div class="title">301</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">302</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">303</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">304</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							
+							<div class="sideMenu">
+								<div class="title">四樓</div>
+								<ul class="noUnderline">
+									<li>
+										<div class="sideMenu">
+											<div class="title">401</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">402</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">403</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="sideMenu">
+											<div class="title">404</div>
+											<ul>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+												<li class="link">王伯伯</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="sideInfoContainer hide">
+							<div class="sideInfo">
+								<div class="title">康健雲平台</div>
+								<div>
+									<div class="row">
+										<div><img src="component/sideInfo/pic/people.png" alt="人" /></div>
+										<div class="flex-end">
+											<div>101</div>
+											<div>王伯伯</div>
+										</div>
+									</div>
+									
+									<div class="row operatingArea">
+										<div><img class="backBtn" src="component/sideInfo/pic/back.png" alt="back" /></div>
+										<div><img class="homeBtn" src="component/sideInfo/pic/home.png" alt="home" /></div>
+										<div><img class="upBtn" src="component/sideInfo/pic/up.png" alt="up" /></div>
+										<div><img class="downBtn" src="component/sideInfo/pic/down.png" alt="down" /></div>
+									</div>
+									
+									<div>
+										<div class="underlineTitle">警告</div>
+										<ul>
+											<li>2019/10/08-1次</li>
+											<li>2019/10/08-1次</li>
+											<li>2019/10/08-1次</li>
+											<li>2019/10/08-1次</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="settingPage hide">
+						<div class="sideMenuContainer2">
+							<div class="sideMenu">
+								<div class="title">樓層管理</div>
+								<ul>
+									<li data-link="flooarManagement">1樓</li>
+									<li data-link="flooarManagement">2樓</li>
+									<li data-link="flooarManagement">3樓</li>
+									<li data-link="flooarManagement">4樓</li>
+								</ul>
+							</div>
+							
+							<div class="sideMenu">
+								<div class="title">設備管理</div>
+								<ul>
+									<li data-link="deviceManagement">閘道器</li>
+									<li data-link="deviceManagement">床</li>
+									<li data-link="deviceManagement">睡眠帶</li>
+									<li data-link="deviceManagement">感知照明</li>
+									<li data-link="deviceManagement">加濕器</li>
+									<li data-link="deviceManagement">空氣質量</li>
+									<li data-link="deviceManagement">血壓計</li>
+									<li data-link="deviceManagement">脂肪計</li>
+									<li data-link="deviceManagement">電動桌</li>
+									<li data-link="deviceManagement">電動沙發</li>
+									<li data-link="deviceManagement">血糖計</li>
+									<li data-link="deviceManagement">額溫計</li>
+								</ul>
+							</div>
+							
+							<div class="sideMenu">
+								<div class="title">告警管理</div>
+								<ul>
+									<li data-link="alarmManagement">床</li>
+									<li data-link="alarmManagement">睡眠帶</li>
+									<li data-link="alarmManagement">感知照明</li>
+									<li data-link="alarmManagement">加濕器</li>
+									<li data-link="alarmManagement">空氣質量</li>
+									<li data-link="alarmManagement">血壓計</li>
+									<li data-link="alarmManagement">脂肪計</li>
+									<li data-link="alarmManagement">電動桌</li>
+									<li data-link="alarmManagement">電動沙發</li>
+									<li data-link="alarmManagement">血糖計</li>
+									<li data-link="alarmManagement">額溫計</li>
+								</ul>
+							</div>
+							
+							<div class="sideMenu linkBtn">
+								<div class="title" data-link="userManagement">使用者管理</div>
+							</div>
+							
+							<div class="sideMenu linkBtn">
+								<div class="title" data-link="groupManagement">群組管理</div>
+							</div>
+							
+							<div class="sideMenu linkBtn">
+								<div class="title active" data-link="accountManagement">帳號管理</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="main">
+					<div class="homePage">
+						<div class="borderButtonContainer">
+							<div class="iconButton borderButton">
+								<img src="component/iconButton/pic/manage-individual.png" alt="個人管理" />
+								<div class="text">個人管理</div>
+							</div>
+							
+							<div class="iconButton borderButton">
+								<img src="component/iconButton/pic/manage-group.png" alt="群組管理" />
+								<div class="text">群組管理</div>
+							</div>
+						</div>
+						
+						<div class="roomPatientContainer">
+							<div class="roomRow">
+								<div class="room alarm">101</div>
+								<div class="room">102</div>
+								<div class="room">103</div>
+								<div class="room alarm">104</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="101">
+								<div class="patient">
+									<div class="content">
+										<div class="number">101A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient alarm">
+									<div class="content">
+										<div class="number">101B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">101C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="102">
+								<div class="patient">
+									<div class="content">
+										<div class="number">102A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">102B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">102C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">102D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">102E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">102F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="103">
+								<div class="patient">
+									<div class="content">
+										<div class="number">103A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">103B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">103C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">103D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">103E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">103F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="104">
+								<div class="patient">
+									<div class="content">
+										<div class="number">104A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient alarm">
+									<div class="content">
+										<div class="number">104B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">104C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient alarm">
+									<div class="content">
+										<div class="number">104D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient alarm">
+									<div class="content">
+										<div class="number">104E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient alarm">
+									<div class="content">
+										<div class="number">104F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="roomRow">
+								<div class="room">201</div>
+								<div class="room">202</div>
+								<div class="room alarm">203</div>
+								<div class="room">204</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="201">
+								<div class="patient">
+									<div class="content">
+										<div class="number">201A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">201B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">201C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">201D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">201E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">201F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="202">
+								<div class="patient">
+									<div class="content">
+										<div class="number">202A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">202B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">202C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">202D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">202E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">202F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="203">
+								<div class="patient">
+									<div class="content">
+										<div class="number">203A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">203B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">203C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">203D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">203E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient alarm">
+									<div class="content">
+										<div class="number">203F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="204">
+								<div class="patient">
+									<div class="content">
+										<div class="number">204A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">204B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">204C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">204D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">204E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">204F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="roomRow">
+								<div class="room">301</div>
+								<div class="room">302</div>
+								<div class="room alarm">303</div>
+								<div class="room">304</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="301">
+								<div class="patient">
+									<div class="content">
+										<div class="number">301A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">301B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">301C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">301D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">301E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">301F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="302">
+								<div class="patient">
+									<div class="content">
+										<div class="number">302A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">302B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">302C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">302D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">302E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">302F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="303">
+								<div class="patient">
+									<div class="content">
+										<div class="number">303A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">303B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">303C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">303D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">303E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient alarm">
+									<div class="content">
+										<div class="number">303F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="304">
+								<div class="patient">
+									<div class="content">
+										<div class="number">304A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">304B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">304C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">304D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">304E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">304F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="roomRow">
+								<div class="room">401</div>
+								<div class="room">402</div>
+								<div class="room alarm">403</div>
+								<div class="room">404</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="401">
+								<div class="patient">
+									<div class="content">
+										<div class="number">401A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">401B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">401C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">401D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">401E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">401F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="402">
+								<div class="patient">
+									<div class="content">
+										<div class="number">402A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">402B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">402C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">402D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">402E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">402F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="403">
+								<div class="patient">
+									<div class="content">
+										<div class="number">403A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">403B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">403C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">403D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">403E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient alarm">
+									<div class="content">
+										<div class="number">403F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="patientGroup" data-roomId="404">
+								<div class="patient">
+									<div class="content">
+										<div class="number">404A</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">404B</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">404C</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">404D</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">404E</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+								
+								<div class="patient">
+									<div class="content">
+										<div class="number">404F</div>
+										<div class="name">王伯伯</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="trapezoidNavbar hide">
+							<div class="item left">
+								<div class="content left">
+									<img class="image" src="component/trapezoidNavbar/pic/electricBed.png" />
+									<img class="image-active" src="component/trapezoidNavbar/pic/electricBed-active.png" />
+									<div class="text">電動床</div>
+								</div>
+							</div>
+							
+							<div class="item top">
+								<div class="content top">
+									<img class="image" src="component/trapezoidNavbar/pic/sleepingRibbon.png" />
+									<img class="image-active" src="component/trapezoidNavbar/pic/sleepingRibbon-active.png" />
+									<div class="text">睡眠帶</div>
+								</div>
+							</div>
+							
+							<div class="item bottom">
+								<div class="content bottom">
+									<img class="image" src="component/trapezoidNavbar/pic/blood.png" />
+									<img class="image-active" src="component/trapezoidNavbar/pic/blood-active.png" />
+									<div class="text">血液狀態</div>
+								</div>
+							</div>
+							
+							<div class="item top">
+								<div class="content top">
+									<img class="image" src="component/trapezoidNavbar/pic/info.png" />
+									<img class="image-active" src="component/trapezoidNavbar/pic/info-active.png" />
+									<div class="text">基礎資料</div>
+								</div>
+							</div>
+							
+							<div class="item right">
+								<div class="content right">
+									<img class="image" src="component/trapezoidNavbar/pic/device.png" />
+									<img class="image-active" src="component/trapezoidNavbar/pic/device-active.png" />
+									<div class="text">室內設備</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="electricBedContainer hide">
+							<div class="bedContainer">
+								<div class="bed">
+									<img src="component/electricBed/pic/bed.png" alt="床" />
+								</div>
+								
+								<div class="operatingArea">
+									<div class="scrollItem">
+										<div class="left">
+											<div class="scrollbar movableRange">
+												<div class="track"></div>
+												<div class="slider movableItem direction-x limit-x"></div>
+											</div>
+											
+											<div class="scrollbarRange">
+												<div class="min">0</div>
+												<div class="max">66</div>
+											</div>
+											
+											<div class="scrollbarValue">46</div>
+										</div>
+										<div class="right"><img src="component/electricBed/pic/head.png" alt="頭" /></div>
+									</div>
+									
+									<div class="scrollItem">
+										<div class="left">
+											<div class="scrollbar movableRange">
+												<div class="track"></div>
+												<div class="slider movableItem direction-x limit-x"></div>
+											</div>
+											
+											<div class="scrollbarRange">
+												<div class="min">0</div>
+												<div class="max">28</div>
+											</div>
+											
+											<div class="scrollbarValue">8</div>
+										</div>
+										<div class="right"><img src="component/electricBed/pic/foot.png" alt="腳" /></div>
+									</div>
+									
+									<div class="scrollItem">
+										<div class="left">
+											<div class="scrollbar movableRange">
+												<div class="track"></div>
+												<div class="slider movableItem direction-x limit-x"></div>
+											</div>
+											
+											<div class="scrollbarRange">
+												<div class="min">0</div>
+												<div class="max">35</div>
+											</div>
+											
+											<div class="scrollbarValue">17</div>
+										</div>
+										<div class="right"><img src="component/electricBed/pic/body.png" alt="身體" /></div>
+									</div>
+									
+									<button class="btn">往前傾斜</button>
+									<button class="btn">往後傾斜</button>
+								</div>
+								
+								<div class="chartsGroup">
+									<div class="chart">
+										<div id="backAngle"></div>
+									</div>
+									<div class="chart">
+										<div id="bedHeight"></div>
+									</div>
+									<div class="chart">
+										<div id="footAngle"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sleepingTapeContainer hide">
+							<div>
+								<div class="border-box"></div>
+								<div>型睡眠</div>
+							</div>
+							
+							<div>
+								<div>心率</div>
+								<div class="border-box"></div>
+								<div>次/分鐘</div>
+							</div>
+							
+							<div>
+								<div>呼吸</div>
+								<div class="border-box"></div>
+								<div>次/分鐘</div>
+							</div>
+							
+							<div>
+								<div>體動</div>
+								<div class="border-box"></div>
+								<div>次</div>
+							</div>
+							
+							<div>
+								<div>清醒</div>
+								<div class="border-box"></div>
+								<div>次</div>
+							</div>
+						</div>
+						
+						<div class="bloodContainer hide">
+							<div class="row">
+								<div class="left">
+									<div><img src="component/bloodInfo/pic/pressure.png" alt="血壓" /></div>
+									<div>
+										<div>
+											<div>收縮壓</div>
+											<div>145</div>
+											<div>mmHg</div>
+										</div>
+										
+										<div>
+											<div>舒張壓</div>
+											<div>80</div>
+											<div>mmHg</div>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div id="systolic"><!--收縮壓--></div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="left"></div>
+								<div class="right">
+									<div id="diastolic"><!--舒張壓--></div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="left">
+									<div><img src="component/bloodInfo/pic/sugar.png" alt="血糖" /></div>
+									<div>
+										<div>
+											<div>血糖</div>
+											<div>80</div>
+											<div>mg/dl</div>
+										</div>
+									</div>
+								</div>
+								<div class="right">
+									<div id="bloodSugar"><!--血糖--></div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="left">
+									<div>
+										<div>血氧</div>
+										<div>98</div>
+										<div>%</div>
+									</div>
+									
+									<div>
+										<div>脈搏</div>
+										<div>80</div>
+										<div>次</div>
+									</div>
+								</div>
+								<div class="right"></div>
+							</div>
+						</div>
+						
+						<div class="infoContainer hide">
+							<table class="infoTable">
+								<tr>
+									<td class="imgTd">
+										<img src="component/info/pic/thermometer.png" alt="體溫" />
+									</td>
+									
+									<td class="thermometerContainer inline-block-child-div">
+										<div class="item">體溫</div>
+										<div class="value">36.5</div>
+										<div class="unit">°C</div>
+									</td>
+									
+									<td class="temperatureContainer">
+										<div id="temperature"></div>
+									</td>
+								</tr>
+								
+								<tr>
+									<td colspan="3" class="row-spacing"></td>
+								</tr>
+								
+								<tr>
+									<td class="imgTd vertical-align-top">
+										<img class="" src="component/info/pic/footprint.png" alt="腳印" />
+									</td>
+									
+									<td colspan="2">
+										<table class="data">
+											<tr>
+												<td class="th">體重</td>
+												<td class="value">%55%</td>
+												<td class="unit">kg</td>
+											</tr>
+											
+											<tr>
+												<td class="th">BMI</td>
+												<td class="value">%19%</td>
+												<td class="unit">kg/m³</td>
+											</tr>
+											
+											<tr>
+												<td class="th">PM₁₀濃度</td>
+												<td class="value">%48%</td>
+												<td class="unit">μg/m³</td>
+											</tr>
+											
+											<tr>
+												<td class="th">基礎代謝率</td>
+												<td class="value">%55%</td>
+												<td class="unit">kcal/日</td>
+											</tr>
+											
+											<tr>
+												<td class="th">身體年齡</td>
+												<td class="value">%19%</td>
+												<td class="unit">歲</td>
+											</tr>
+											
+											<tr>
+												<td class="th">生理等級</td>
+												<td class="value text-align-right"><div class="value borderColumn">等級</div></td>
+												<td class="unit"></td>
+											</tr>
+										</table>
+										
+										<table class="data">
+											<tr>
+												<td class="th">體脂肪</td>
+												<td class="value">%36.5%</td>
+												<td class="unit">%</td>
+											</tr>
+											
+											<tr>
+												<td class="th">內臟脂肪</td>
+												<td class="value">%36.5%</td>
+												<td class="unit">%</td>
+											</tr>
+											
+											<tr>
+												<td class="th">體水分</td>
+												<td class="value">%36.5%</td>
+												<td class="unit">%</td>
+											</tr>
+											
+											<tr>
+												<td class="th">肌肉量</td>
+												<td class="value">%36.5%</td>
+												<td class="unit">kg</td>
+											</tr>
+											
+											<tr>
+												<td class="th">骨量</td>
+												<td class="value">%36.5%</td>
+												<td class="unit">kg</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="insideDeviceContainer hide">
+							<div class="controller">
+								<table>
+									<tr>
+										<td class="deviceImage">
+											<img src="component/insideDevice/pic/air-condition.png" alt="冷氣" />
+										</td>
+										
+										<td class="deviceItem">冷氣</td>
+										
+										<td class="situation">
+											<div class="trapezoidSwitch on">
+												<div class="item left">
+													<div class="content">
+														<div class="text">on</div>
+													</div>
+												</div>
+												
+												<div class="item right">
+													<div class="content">
+														<div class="text">off</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="temperature">
+												<div class="value borderColumn">66</div>
+												<div class="unit">°C</div>
+											</div>
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="deviceImage"><img src="component/insideDevice/pic/light.png" alt="燈光" /></td>
+										
+										<td class="deviceItem">燈光</td>
+										
+										<td class="situation">
+											<div class="trapezoidSwitch">
+												<div class="item left">
+													<div class="content">
+														<div class="text">on</div>
+													</div>
+												</div>
+												
+												<div class="item right">
+													<div class="content">
+														<div class="text">off</div>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									
+									<tr>
+										<td class="deviceImage"></td>
+										
+										<td class="deviceItem">空氣濕度</td>
+										
+										<td class="situation">
+											<div class="value">66</div>
+											<div class="unit">%</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+							
+							<div class="data">
+								<table>
+									<tr>
+										<td class="th">空氣品質</td>
+										<td class="value">%50%</td>
+										<td class="unit">AQI</td>
+									</tr>
+									
+									<tr>
+										<td class="th">PM₂.₅濃度</td>
+										<td class="value">%17%</td>
+										<td class="unit">μg/m³</td>
+									</tr>
+									
+									<tr>
+										<td class="th">PM₁₀濃度</td>
+										<td class="value">%48%</td>
+										<td class="unit">μg/m³</td>
+									</tr>
+									
+									<tr>
+										<td class="th">CO濃度</td>
+										<td class="value">%48%</td>
+										<td class="unit">ppm</td>
+									</tr>
+									
+									<tr>
+										<td class="th">SO₂濃度</td>
+										<td class="value">%1.5%</td>
+										<td class="unit">ppb</td>
+									</tr>
+									
+									<tr>
+										<td class="th">NO₂濃度</td>
+										<td class="value">%3.2%</td>
+										<td class="unit">ppb</td>
+									</tr>
+									
+									<tr>
+										<td class="th">O₃濃度</td>
+										<td class="value">%3.2%</td>
+										<td class="unit">ppb</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+					<div class="settingPage hide">
+						<div class="flooarManagement hide">
+							<div class="insertBar">
+								<button id="addFloor">新增樓層</button>
+								<!-- <button class="addRoom">新增房號</button> -->
+							</div>
+							
+							<div class="floorOperatingContainer">
+								<div class="floorOperating">
+									<div>
+										<div class="title">1樓</div>
+										<button class="deleteFloor hollow">刪除</button>
+										<button class="addRoom">新增房號</button>
+									</div>
+									
+									<div>
+										<div class="roomBlock">
+											<div class="room">101</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">102</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">103</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">104</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="floorOperating">
+									<div>
+										<div class="title">2樓</div>
+										<button class="deleteFloor hollow">刪除</button>
+										<button class="addRoom">新增房號</button>
+									</div>
+									
+									<div>
+										<div class="roomBlock">
+											<div class="room">201</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">202</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">203</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">204</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="floorOperating">
+									<div>
+										<div class="title">3樓</div>
+										<button class="deleteFloor hollow">刪除</button>
+										<button class="addRoom">新增房號</button>
+									</div>
+									
+									<div>
+										<div class="roomBlock">
+											<div class="room">301</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">302</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">303</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">304</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="floorOperating">
+									<div>
+										<div class="title">4樓</div>
+										<button class="deleteFloor hollow">刪除</button>
+										<button class="addRoom">新增房號</button>
+									</div>
+									
+									<div>
+										<div class="roomBlock">
+											<div class="room">401</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">402</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">403</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+										
+										<div class="roomBlock">
+											<div class="room">404</div>
+											<img class="deleteRoom" src="component/floorManagement/pic/delete.png" alt="delete" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="deviceManagement hide">
+							<div class="insertBar">
+								<button id="addGateway">新增閘道器</button>
+								<button id="addBed">新增電動床</button>
+							</div>
+							
+							<table class="sortTable">
+								<thead>
+									<tr>
+										<th>
+											識別碼
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											名稱
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											描述
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											房號
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											使用者
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											服務UUID
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											接收UUID
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											發送UUID
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th><!--button column--></th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>dfgdfgdyuk6</td>
+										<td>jaybed</td>
+										<td>無</td>
+										<td>102</td>
+										<td>王先生</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td class="operatingTd"><button>修改</button><button class="negative">刪除</button></td>
+									</tr>
+									
+									<tr>
+										<td>dfgdfgdyuk6</td>
+										<td>jaybed</td>
+										<td>無</td>
+										<td>102</td>
+										<td>王先生</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td class="operatingTd"><button>修改</button><button class="negative">刪除</button></td>
+									</tr>
+									
+									<tr>
+										<td>dfgdfgdyuk6</td>
+										<td>jaybed</td>
+										<td>無</td>
+										<td>102</td>
+										<td>王先生</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td class="operatingTd"><button>修改</button><button class="negative">刪除</button></td>
+									</tr>
+									
+									<tr>
+										<td>dfgdfgdyuk6</td>
+										<td>jaybed</td>
+										<td>無</td>
+										<td>102</td>
+										<td>王先生</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td class="operatingTd"><button>修改</button><button class="negative">刪除</button></td>
+									</tr>
+									
+									<tr>
+										<td>dfgdfgdyuk6</td>
+										<td>jaybed</td>
+										<td>無</td>
+										<td>102</td>
+										<td>王先生</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td class="operatingTd"><button>修改</button><button class="negative">刪除</button></td>
+									</tr>
+									
+									<tr>
+										<td>dfgdfgdyuk6</td>
+										<td>jaybed</td>
+										<td>無</td>
+										<td>102</td>
+										<td>王先生</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td class="operatingTd"><button>修改</button><button class="negative">刪除</button></td>
+									</tr>
+									
+									<tr>
+										<td>dfgdfgdyuk6</td>
+										<td>jaybed</td>
+										<td>無</td>
+										<td>102</td>
+										<td>王先生</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td class="operatingTd"><button>修改</button><button class="negative">刪除</button></td>
+									</tr>
+									
+									<tr>
+										<td>dfgdfgdyuk6</td>
+										<td>jaybed</td>
+										<td>無</td>
+										<td>102</td>
+										<td>王先生</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td>oefef896-de71-11e9-8a34-2a2ae2dbcce4</td>
+										<td class="operatingTd"><button>修改</button><button class="negative">刪除</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="alarmManagement hide">
+							<div class="insertBar">
+								<button id="addAlarm">新增告警</button>
+							</div>
+							
+							<table class="sortTable">
+								<thead>
+									<tr>
+										<th>
+											識別碼
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											設備名稱
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											頭部角度
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											腳部角度
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											整床高度
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th><!--button column--></th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>0</td>
+										<td>jaybed</td>
+										<td>74</td>
+										<td>89</td>
+										<td>489</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>1</td>
+										<td>asd</td>
+										<td>254</td>
+										<td>56</td>
+										<td>543</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>3</td>
+										<td>fghbdxf</td>
+										<td>44</td>
+										<td>73</td>
+										<td>666</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>7</td>
+										<td>gjukgdgfhb</td>
+										<td>38</td>
+										<td>22</td>
+										<td>777</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>15</td>
+										<td>ilk78ysv</td>
+										<td>81</td>
+										<td>98</td>
+										<td>789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>4</td>
+										<td>zrdghrfj</td>
+										<td>92</td>
+										<td>71</td>
+										<td>456</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>2</td>
+										<td>ofdhgfnfg</td>
+										<td>87</td>
+										<td>3</td>
+										<td>123</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>6</td>
+										<td>kfdhrdbher</td>
+										<td>14</td>
+										<td>187</td>
+										<td>62</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="userManagement hide">
+							<div class="insertBar">
+								<button id="addUser">新增使用者</button>
+							</div>
+							
+							<table class="sortTable">
+								<thead>
+									<tr>
+										<th>
+											病歷號
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											姓名
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											電子信箱
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											連絡電話
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											樓層
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											房號
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th><!--button column--></th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>3345678</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td>1</td>
+										<td>102</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>3345678</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td>1</td>
+										<td>102</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>3345678</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td>1</td>
+										<td>102</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>3345678</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td>1</td>
+										<td>102</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>3345678</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td>1</td>
+										<td>102</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>3345678</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td>1</td>
+										<td>102</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>3345678</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td>1</td>
+										<td>102</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>3345678</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td>1</td>
+										<td>102</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div class="groupManagement hide">
+							<div class="insertBar">
+								<button id="addGroup">新增群組</button>
+							</div>
+							
+							<div>
+								<div class="groupRow">
+									<div class="title">群組一</div>
+									<button>修改</button>
+									<button class="negative">刪除</button>
+								</div>
+								
+								<div class="groupRow">
+									<div class="title">群組二</div>
+									<button>修改</button>
+									<button class="negative">刪除</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="accountManagement">
+							<div class="insertBar">
+								<button id="addAccount">新增帳號</button>
+							</div>
+							
+							<table class="sortTable">
+								<thead>
+									<tr>
+										<th>
+											帳號
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											密碼
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											姓名
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											電子信箱
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th>
+											連絡電話
+											<div class="sortIcon">
+												<img src="component/sortTable/pic/none.png" alt="none" />
+												<img src="component/sortTable/pic/asc.png" alt="asc" />
+												<img src="component/sortTable/pic/desc.png" alt="desc" />
+											</div>
+										</th>
+										<th><!--button column--></th>
+									</tr>
+								</thead>
+								
+								<tbody>
+									<tr>
+										<td>jaybed</td>
+										<td>******</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>jaybed</td>
+										<td>******</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>jaybed</td>
+										<td>******</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>jaybed</td>
+										<td>******</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>jaybed</td>
+										<td>******</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>jaybed</td>
+										<td>******</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>jaybed</td>
+										<td>******</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+									
+									<tr>
+										<td>jaybed</td>
+										<td>******</td>
+										<td>jayjay</td>
+										<td>jayjay@gmail.com</td>
+										<td>123456789</td>
+										<td class="operatingTd"><button>設定</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--login-->
+		<div id="login_fail" class="msgbox">
+			<div class="box">
+				<div class="title">無法登入？</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<div>遇上無法登入請嘗試以下幾點</div>
+						<div>1.密碼大小寫輸入錯誤</div>
+						<div>2.確認所屬使用網路環境</div>
+						<div>3.該帳號已登入完成</div>
+						<div>4.帳號未註冊</div>
+						<div>5.確認帳戶是否經過信箱驗證完成，會員必需驗證後，才可以登入</div>
+						<div>&nbsp;</div>
+						<div>如嘗試以上問題依然存在請提供</div>
+						<div>1.帳戶、註冊信箱</div>
+						<div>發送郵件至service@rsx.com.tw，將有專人為您處理。</div>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>重新登入</button>
+				</div>
+			</div>
+		</div>
+		
+		<!--floor-->
+		<div id="floorMsgbox" class="msgbox">
+			<div class="box">
+				<div class="title">新增樓層</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<label>新增樓層：<input type="text"/></label>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>確認</button>
+					<button class="negative">取消</button>
+				</div>
+			</div>
+		</div>
+		
+		<!--room-->
+		<div id="roomMsgbox" class="msgbox">
+			<div class="box">
+				<div class="title">新增房號</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<label>新增房號：<input type="text"/></label>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>確認</button>
+					<button class="negative">取消</button>
+				</div>
+			</div>
+		</div>
+		
+		<!--alarm-->
+		<div id="alarmMsgbox" class="msgbox">
+			<div class="box">
+				<div class="title">告警值</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<label>頭部角度：<input type="text"/></label>
+						<label><input type="checkbox" /><span>不設定</span></label>
+					</div>
+					
+					<div>
+						<label>腳部角度：<input type="text"/></label>
+						<label><input type="checkbox" /><span>不設定</span></label>
+					</div>
+					
+					<div>
+						<label>整床高度：<input type="text"/></label>
+						<label><input type="checkbox" /><span>不設定</span></label>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>確認</button>
+					<button class="negative">取消</button>
+				</div>
+			</div>
+		</div>
+		
+		<!--gateway-->
+		<div id="gatewayMsgbox" class="msgbox">
+			<div class="box">
+				<div class="title">新增閘道器</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<label>
+							<div>識別碼：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>名稱：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>描述：</div>
+							<input type="text" />
+						</label>
+					</div>
+					<div>
+						<label>
+							<div>樓層：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>房號：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>連接裝置-1：</div>
+							<input type="text" />
+						</label>
+					</div>
+					<div>
+						<label>
+							<div>連接裝置-2：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>連接裝置-3：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>連接裝置-4：</div>
+							<input type="text" />
+						</label>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>確認</button>
+					<button class="negative">取消</button>
+				</div>
+			</div>
+		</div>
+		
+		<!--bed-->
+		<div id="bedMsgbox" class="msgbox">
+			<div class="box">
+				<div class="title">新增電動床</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<label>
+							<div>識別碼：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>名稱：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>描述：</div>
+							<input type="text" />
+						</label>
+					</div>
+					<div>
+						<label>
+							<div>樓層：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>房號：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>服務UUID：</div>
+							<input type="text" />
+						</label>
+					</div>
+					<div>
+						<label>
+							<div>服務UUID：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>服務UUID：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>服務UUID：</div>
+							<input type="text" />
+						</label>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>確認</button>
+					<button class="negative">取消</button>
+				</div>
+			</div>
+		</div>
+		
+		<!--user-->
+		<div id="userMsgbox" class="msgbox">
+			<div class="box">
+				<div class="title">新增使用者</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<label>
+							<div>病歷號：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>姓名：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>電子信箱：</div>
+							<input type="text" />
+						</label>
+					</div>
+					<div>
+						<label>
+							<div>連絡電話：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>樓層：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>房號：</div>
+							<input type="text" />
+						</label>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>確認</button>
+					<button class="negative">取消</button>
+				</div>
+			</div>
+		</div>
+		
+		<!--group-->
+		<div id="groupMsgbox" class="msgbox">
+			<div class="box">
+				<div class="title">新增使用者</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<label>
+							<div>群組名稱：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>群組種類：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>選擇設備：</div>
+							<input type="text" />
+						</label>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>確認</button>
+					<button class="negative">取消</button>
+				</div>
+			</div>
+		</div>
+		
+		<!--account-->
+		<div id="accountMsgbox" class="msgbox">
+			<div class="box">
+				<div class="title">新增帳號</div>
+				<div class="close"></div>
+				<div class="content">
+					<div>
+						<label>
+							<div>帳號：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>密碼：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>姓名：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>電子信箱：</div>
+							<input type="text" />
+						</label>
+					</div>
+					
+					<div>
+						<label>
+							<div>聯絡電話：</div>
+							<input type="text" />
+						</label>
+					</div>
+				</div>
+				<div class="operatingArea">
+					<button>確認</button>
+					<button class="negative">取消</button>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="tool/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="tool/canvasjs.min.js"></script>
+		<script type="text/javascript" src="tool/yun.js"></script>
+		<script type="text/javascript" src="global/main.js"></script>
+		<script type="text/javascript" src="component/msgbox/msgbox.js"></script>
+		<script type="text/javascript" src="component/iconButton/iconButton.js"></script>
+		<script type="text/javascript" src="component/login/login.js"></script>
+		<script type="text/javascript" src="component/sideMenu/sideMenu.js"></script>
+		<script type="text/javascript" src="component/trapezoidNavbar/trapezoidNavbar.js"></script>
+		<script type="text/javascript" src="component/roomPatient/roomPatient.js"></script>
+		<script type="text/javascript" src="component/electricBed/electricBed.js"></script>
+		<script type="text/javascript" src="component/chart/chart.js"></script>
+		<script type="text/javascript" src="component/trapezoidSwitch/trapezoidSwitch.js"></script>
+		<script type="text/javascript" src="component/sideInfo//sideInfo.js"></script>
+		<script type="text/javascript" src="component/sortTable/sortTable.js"></script>
+		<script type="text/javascript" src="component/sideMenu/sideMenu2.js"></script>
+		<script type="text/javascript" src="component/floorManagement/floorManagement.js"></script>
+	</body>
+</html>
